@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "tesseract.js": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.310"
+  }
+}
