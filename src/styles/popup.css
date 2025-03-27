@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+/* popup.css */
 
-body {
+.main-body {
 	width: 300px;
 	background: linear-gradient(135deg, #ff6b81, #6b6bff);
 	color: white;
@@ -15,26 +15,26 @@ body {
 	user-select: none;
 }
 
-.container {
+.main-body .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
 }
 
-#logo {
+.main-body #logo {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 20px;
 }
 
-#logo img {
+.main-body #logo img {
 	width: 250px;
 	height: auto;
 }
 
-label {
+.main-body label {
 	font-size: 14px;
 	color: #fff;
 	margin-bottom: 5px;
@@ -42,7 +42,7 @@ label {
 	width: 100%;
 }
 
-select {
+.main-body select {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 15px;
@@ -58,19 +58,33 @@ select {
 	overflow-y: auto;
 }
 
-select:focus {
+.main-body select:focus {
 	border-color: #ff6b81;
 	outline: none;
 }
 
-#blocked-count {
-	font-size: 14px;
-	font-weight: 600;
-	margin-top: 20px;
-	color: #fff;
-	background: rgba(0, 0, 0, 0.5);
-	padding: 5px 10px;
-	border-radius: 8px;
-	width: 100%;
+.main-body #blockedCount {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 10px 20px;
+	border-radius: 12px;
+	width: fit-content;
+	margin: 20px auto 0;
 	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out;
 }
+
+.main-body #blockedCount:hover {
+	transform: scale(1.05); /* Увеличение размера при наведении */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Усиление тени */
+}
+
+/* .highlight {
+	background-color: rgb(199, 199, 0);
+	border-radius: 3px;
+	padding: 2px 5px;
+	color: black;
+} */

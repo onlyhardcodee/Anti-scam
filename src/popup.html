@@ -1,3 +1,5 @@
+<!-- popup.html -->
+
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
@@ -6,13 +8,13 @@
 		<title>Anti-Scam Detector</title>
 		<link rel="stylesheet" href="styles/popup.css" />
 	</head>
-	<body>
+	<body class="main-body">
 		<div class="container">
 			<div id="logo">
 				<img src="logo.png" alt="Anti Scam Logo" />
 			</div>
 
-			<label for="keywords">Выберите ключевое слово для проверки:</label>
+			<label for="keywords">Выберите тег для проверки:</label>
 			<select id="keywords">
 				<option value="">Выберите слово</option>
 				<optgroup label="Финансовые мошенничества">
@@ -47,9 +49,23 @@
 				</optgroup>
 			</select>
 
-			<div id="blockedCount">Заблокировано объектов: 153</div>
+			<div id="blockedCount">
+				Заблокировано объектов: <i id="count"></i>
+				<script>
+					let count = 0
+
+					function updateDisplay() {
+						document.getElementById('count').textContent = count
+					}
+
+					function increment() {
+						count++
+						updateDisplay()
+					}
+				</script>
+			</div>
 		</div>
 
-		<script src="scripts/popup.ts"></script>
+		<script src="scripts/popup.js"></script>
 	</body>
 </html>

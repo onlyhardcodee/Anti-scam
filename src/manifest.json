@@ -1,23 +1,31 @@
 {
 	"manifest_version": 3,
-	"name": "Kursach",
+	"name": "АНТИ СКАМ - Ваша защита от мошенников!",
 	"version": "1.0",
+	"description": "Расширение для защиты от мошенников.",
+	"permissions": ["storage", "activeTab", "scripting"],
+	"host_permissions": ["<all_urls>"],
 	"background": {
-		"service_worker": "scripts/background.ts"
+		"service_worker": "scripts/background.js"
 	},
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
-			"ts": ["content.ts"]
+			"js": ["scripts/content.js"],
+			"css": ["styles/popup.css"]
 		}
 	],
 	"action": {
-		"default_popup": "src/popup.html",
+		"default_popup": "popup.html",
 		"default_icon": {
 			"16": "icons/icon16.png",
 			"48": "icons/icon48.png",
 			"128": "icons/icon128.png"
 		}
 	},
-	"permissions": ["notifications", "activeTab"]
+	"icons": {
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	}
 }
