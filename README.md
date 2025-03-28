@@ -4,7 +4,6 @@
 ## Структура проекта
 
 ```bash
-``
 ├── README.md
 ├── background.js
 ├── content.js
