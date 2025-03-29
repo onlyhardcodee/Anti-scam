@@ -23,7 +23,7 @@
 }
 
 /* Контейнер для всех элементов внутри */
-.container {
+.main-body .container {
 	display: flex;
 	flex-direction: column; /* Элементы располагаются по вертикали */
 	align-items: center; /* Выравнивание по центру */
