@@ -1,124 +1,140 @@
+/* Импортируем шрифт Montserrat Alternates с Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Основной стиль для тела страницы */
 .main-body {
-	width: 300px;
-	background: linear-gradient(135deg, #ff6b81, #6b6bff);
-	color: white;
-	font-family: 'Montserrat Alternates', sans-serif;
-	font-weight: 550;
-	padding: 20px;
-	border-radius: 12px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	user-select: none;
-	overflow: hidden;
+	width: 300px; /* Устанавливаем фиксированную ширину для основного контейнера */
+	background: linear-gradient(
+		135deg,
+		#ff6b81,
+		#6b6bff
+	); /* Градиентный фон от розового к синим оттенкам */
+	color: white; /* Цвет текста - белый */
+	font-family: 'Montserrat Alternates', sans-serif; /* Подключаем шрифт Montserrat Alternates */
+	font-weight: 550; /* Вес шрифта */
+	padding: 20px; /* Внутренний отступ */
+	border-radius: 12px; /* Округление углов */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для элемента */
+	display: flex; /* Используем Flexbox для позиционирования */
+	flex-direction: column; /* Элементы будут располагаться по вертикали */
+	align-items: center; /* Выравнивание по центру */
+	user-select: none; /* Запрещаем выделение текста */
+	overflow: hidden; /* Скрываем лишнее содержимое */
 }
 
+/* Контейнер для всех элементов внутри */
 .container {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
+	flex-direction: column; /* Элементы располагаются по вертикали */
+	align-items: center; /* Выравнивание по центру */
+	width: 100%; /* Ширина на всю доступную область */
 }
 
+/* Логотип */
 #logo {
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	margin-bottom: 20px;
+	justify-content: center; /* Центрируем логотип */
+	margin-bottom: 20px; /* Отступ снизу */
 	position: relative;
 }
 
 #logo img {
-	width: 250px;
-	height: auto;
-	display: block;
-	margin: 0 auto;
+	width: 250px; /* Ширина логотипа */
+	height: auto; /* Автоматическая высота для сохранения пропорций */
+	display: block; /* Блочный элемент для изображения */
+	margin: 0 auto; /* Центрирование изображения */
 }
 
+/* Контейнер для поля ввода и кнопки */
 .input-container {
-	width: 100%;
+	width: 100%; /* Ширина на всю доступную область */
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 20px;
-	gap: 10px;
-	padding: 0 10px;
+	justify-content: center; /* Центрируем содержимое */
+	align-items: center; /* Выравнивание по центру по вертикали */
+	margin-bottom: 20px; /* Отступ снизу */
+	gap: 10px; /* Пространство между элементами */
+	padding: 0 10px; /* Отступы по бокам */
 }
 
+/* Поле ввода текста */
 input {
-	width: 60%;
-	padding: 10px;
-	background-color: white;
-	border: 1px solid #ddd;
-	border-radius: 8px;
-	font-family: 'Montserrat Alternates', sans-serif;
-	font-weight: 550;
-	font-size: 14px;
-	color: #333;
-	transition: background-color 0.3s;
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	width: 60%; /* Ширина поля ввода */
+	padding: 10px; /* Внутренние отступы */
+	background-color: white; /* Белый фон */
+	border: 1px solid #ddd; /* Светло-серая граница */
+	border-radius: 8px; /* Округление углов */
+	font-family: 'Montserrat Alternates', sans-serif; /* Шрифт для текста */
+	font-weight: 550; /* Вес шрифта */
+	font-size: 14px; /* Размер шрифта */
+	color: #333; /* Цвет текста */
+	transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Тень для поля */
 }
 
+/* Кнопка добавления слова */
 button {
-	width: 35%;
-	padding: 10px;
-	background: #e26a7c;
-	border: none;
-	border-radius: 8px;
-	color: white;
-	font-family: 'Montserrat Alternates', sans-serif;
-	font-weight: 550;
-	font-size: 14px;
-	cursor: pointer;
-	transition: background-color 0.3s;
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	width: 35%; /* Ширина кнопки */
+	padding: 10px; /* Внутренние отступы */
+	background: #e26a7c; /* Розовый фон */
+	border: none; /* Убираем границу */
+	border-radius: 8px; /* Округление углов */
+	color: white; /* Белый цвет текста */
+	font-family: 'Montserrat Alternates', sans-serif; /* Шрифт для текста */
+	font-weight: 550; /* Вес шрифта */
+	font-size: 14px; /* Размер шрифта */
+	cursor: pointer; /* Курсор в виде указателя */
+	transition: background-color 0.3s; /* Плавное изменение фона */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Тень для кнопки */
 }
 
+/* Список слов */
 #wordList {
-	width: 100%;
-	list-style: none;
-	padding: 0;
-	margin: 0;
+	width: 100%; /* Ширина на всю доступную область */
+	list-style: none; /* Убираем маркеры списка */
+	padding: 0; /* Убираем внутренние отступы */
+	margin: 0; /* Убираем внешние отступы */
 }
 
+/* Элемент списка с добавленным словом */
 #wordList li {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-	margin-bottom: 5px;
-	background: rgba(255, 255, 255, 0.1);
-	border-radius: 8px;
-	font-size: 14px;
-	gap: 10px;
-	padding: 10px 20px;
+	justify-content: space-between; /* Располагаем элементы по бокам */
+	align-items: center; /* Выравнивание по центру */
+	padding: 10px; /* Внутренние отступы */
+	margin-bottom: 5px; /* Отступ снизу */
+	background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+	border-radius: 8px; /* Округление углов */
+	font-size: 14px; /* Размер шрифта */
+	gap: 10px; /* Промежуток между элементами */
+	padding: 10px 20px; /* Дополнительные отступы по бокам */
 }
 
+/* Кнопка удаления для каждого слова */
 .delete-button {
-	background: transparent;
-	border: none;
-	color: #ffffff;
-	font-size: 16px;
-	cursor: pointer;
+	background: transparent; /* Прозрачный фон */
+	border: none; /* Убираем границу */
+	color: #ffffff; /* Белый цвет текста */
+	font-size: 16px; /* Размер шрифта */
+	cursor: pointer; /* Курсор в виде указателя */
 	margin-left: auto; /* Отталкиваем кнопку вправо */
-	padding: 0;
-	width: 24px;
-	height: 24px;
+	padding: 0; /* Убираем внутренние отступы */
+	width: 24px; /* Ширина кнопки */
+	height: 24px; /* Высота кнопки */
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: center; /* Центрируем содержимое */
+	align-items: center; /* Центрируем содержимое по вертикали */
 	/* transition: background-color 0.3s; */
 }
 
+/* Эффект при наведении на кнопку удаления */
 .delete-button:hover {
-	color: #ffffff;
+	color: #ffffff; /* Белый цвет текста при наведении */
 }
 
+/* Анимация для удаления слова из списка */
 .slide-out {
-	opacity: 0;
-	transform: translateX(30px);
-	transition: all 0.3s ease;
+	opacity: 0; /* Делаем элемент прозрачным */
+	transform: translateX(30px); /* Перемещаем элемент вправо */
+	transition: all 0.3s ease; /* Плавный переход */
 }

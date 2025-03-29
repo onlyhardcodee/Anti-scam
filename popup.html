@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
+		<!-- Устанавливаем кодировку страницы UTF-8 -->
 		<meta charset="UTF-8" />
+		<!-- Устанавливаем метатег для адаптивности страницы на мобильных устройствах -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Заголовок страницы -->
 		<title>Anti-Scam Detector</title>
+		<!-- Подключаем внешний CSS файл для стилизации страницы -->
 		<link rel="stylesheet" href="popup.css" />
 	</head>
 	<body class="main-body">
+		<!-- Основной контейнер для всего содержимого страницы -->
 		<div class="container">
+			<!-- Логотип приложения -->
 			<div id="logo">
 				<img src="logo.png" alt="Anti Scam Logo" />
 			</div>
 
+			<!-- Контейнер для поля ввода слова и кнопки -->
 			<div class="input-container">
+				<!-- Поле ввода для нового слова -->
 				<input type="text" id="wordInput" placeholder="Введите слово" />
+				<!-- Кнопка для добавления слова -->
 				<button id="addWord">Добавить</button>
 			</div>
 
+			<!-- Список для отображения добавленных слов -->
 			<ul id="wordList"></ul>
 		</div>
+		<!-- Подключаем внешний JavaScript файл для логики страницы -->
 		<script src="popup.js"></script>
 	</body>
 </html>
