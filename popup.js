@@ -62,6 +62,10 @@ function renderWordList() {
 	})
 }
 
+document.getElementById('siteButton').addEventListener('click', () => {
+	chrome.tabs.create({ url: 'https://onlyhardcodee.github.io/' })
+})
+
 // Функция для удаления слова из списка
 function removeWord(word, element) {
 	// Получаем текущий список слов из хранилища

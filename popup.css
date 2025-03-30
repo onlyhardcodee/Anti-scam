@@ -138,3 +138,25 @@ button {
 	transform: translateX(30px); /* Перемещаем элемент вправо */
 	transition: all 0.3s ease; /* Плавный переход */
 }
+
+/* Стили для кнопки "Документация" */
+
+#siteButton {
+	width: 100%;
+	padding: 10px;
+	background: #4caf50; /* Зелёный фон */
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 550;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	margin-top: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#siteButton:hover {
+	background: #45a049; /* Чуть темнее при наведении */
+}
